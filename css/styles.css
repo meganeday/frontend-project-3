@@ -1,0 +1,105 @@
+/* this app uses a mobile-first approach */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+/* header styles */
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1.5vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5vh;
+}
+
+/* main body styles */
+main {
+    text-align: center;
+    padding: 1vh 5vw;
+}
+
+h2 {
+   font-size: 1.4em;
+   padding-top: 3vh;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #9c9c9c;
+    padding-bottom: 4vh;
+}
+
+hr {
+    border-top: 5px solid #000000;
+}
+
+form {
+    border-top: 2px solid #000000;
+    padding-top: 4vh;
+    text-align: left;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.4em;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+input, label, select, textarea {
+    padding: 2vh 3vw;
+    margin: 1vh 0;
+    display: block;
+    color: #6c6c6c;
+    width: 100%;
+}
+
+label {
+    padding-left: 0;
+}
+
+input, select, textarea {
+    border: 0;
+    border-radius: 10px;
+    background-color: #DEE2E6;
+    padding-right: 3vw;
+}
+
+input#zip {
+    width: 50%;
+}
+
+hr#form-break {
+    border-top: 2px solid #000000;
+    margin: 3vh 0;
+}
+
+fieldset.newsletter {
+    margin-top: 2vh;
+}
+
+#submit-button {
+    width: 94%;
+    margin: 3vh auto;
+    color: #ffffff;
+    background-color: #32a897;
+
+}
+
+/* footer styles */
+
+footer > p {
+    text-align: center;
+    color: #9c9c9c;
+    font-size: 10pt;
+}
