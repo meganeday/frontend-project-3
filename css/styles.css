@@ -57,11 +57,20 @@ legend {
 }
 
 input, label, select, textarea {
-    padding: 2vh 3vw;
-    margin: 1vh 0;
+    padding: 1.5vh 3vw;
+    margin: 0;
     display: block;
     color: #6c6c6c;
     width: 100%;
+    transition-duration: .25s;
+    transition-property: background-color, border;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+    border: 2px solid #62D0C1;
 }
 
 label {
@@ -70,10 +79,15 @@ label {
 
 input, select, textarea {
     border: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #DEE2E6;
     padding-right: 3vw;
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-style: italic;
+    text-align: right;
+  }
 
 input#zip {
     width: 50%;
@@ -88,12 +102,23 @@ fieldset.newsletter {
     margin-top: 2vh;
 }
 
+fieldset.newsletter input, fieldset.newsletter label {
+    width: auto;
+    margin-right: 3vw;
+    display: inline-block;
+}
+
 #submit-button {
-    width: 94%;
+    width: 100%;
     margin: 3vh auto;
     color: #ffffff;
-    background-color: #32a897;
+    background-color: #62D0C1;
+    transition-duration: .25s;
+    transition-property: background-color;
+}
 
+#submit-button:hover {
+    background-color: #2F9D8E;
 }
 
 /* footer styles */
@@ -102,4 +127,36 @@ footer > p {
     text-align: center;
     color: #9c9c9c;
     font-size: 10pt;
+    margin: 0;
+    background-color: #000000;
+    padding: 3vh;
+}
+
+/* Styles for Larger Screens*/
+@media screen and (min-width: 768px) {
+    main {
+        width: 75vw;
+        margin: auto;
+    }
+
+    legend {
+        margin: 3vh 0;
+    }
+
+    .contact label {
+        width: 34%;
+        display: inline-block;
+        padding: 0;
+        margin: 1.5vh 0;
+    }
+    
+    .contact input, .contact select {
+        width: 65%;
+        display: inline-block;
+        margin: 1.5vh 0;
+    }
+
+    input#zip {
+        width: 35%;
+    }
 }
