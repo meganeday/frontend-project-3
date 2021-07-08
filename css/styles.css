@@ -135,7 +135,7 @@ fieldset.newsletter {
 
 fieldset.newsletter input, fieldset.newsletter label {
     width: auto;
-    margin-right: 3vw;
+    margin-right: 1em;
     display: inline-block;
 }
 
