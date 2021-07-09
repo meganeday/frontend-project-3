@@ -90,7 +90,7 @@ input, select, textarea {
     text-align: right;
 }
 
-::-moz-placeholder { /* firefox */
+::-moz-placeholder { /* Firefox */
     font-style: italic;
     text-align: right;
 }
@@ -188,7 +188,7 @@ footer > p {
     }
 
     input#zip {
-        width: 35%;
+        width: 25%;
     }
 
     .select-wrapper:after {
